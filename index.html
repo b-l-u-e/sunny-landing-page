@@ -12,16 +12,21 @@
 </head>
 <body>
  <div class="wrapper">
+
+
    <div class="banner">
-     <div class="header">
-        <img src="images/logo.svg" alt="logo" class="logo">
-        <div class="menu">
-          <span>About</span>
-          <span>Services</span>
-          <span>Projects</span>
-          <div class="contact">Contact</div>
-        </div>
-     </div>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="logo">
+ 
+      <nav>
+        <ul class="menu" id="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
      <div class="main">
         <span class="text">We are creatives</span>
         <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow">
@@ -141,6 +146,21 @@
       </div>
    </div>
  </div>
+
+<script>
+  function responsiveNav(){
+    var nav = document.getElementById('nav');
+    if(nav.style.display === "flex"){
+      nav.style.display = "none";
+    }else{
+      nav.style.display = "flex";
+    }
+  }
+ 
+
+  
+
+</script>
 
 </body>
 </html>
